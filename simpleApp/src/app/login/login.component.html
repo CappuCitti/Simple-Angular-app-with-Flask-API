@@ -1,0 +1,34 @@
+<div class="container py-5 vh-50">
+  <div class="d-flex justify-content-center align-items-center h-100">
+    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+      <div class=" shadow-2-strong bordered-15">
+        <div class="card-body p-5" id="card">
+          <h3 class="mb-3 text-center text-primary">Accesso area riservata</h3>
+
+          <form [formGroup]="form" (ngSubmit)="submit()">
+            <div class="row">
+              <div class="form-group mb-3 col-md-12 col-sm-12">
+                <label class="form-check-labe" for="userid">Email</label>
+                  <input type="email" class="form-control" formControlName="email" />
+              </div>
+
+              <div class="form-group mb-3 col-md-12 col-sm-12">
+                <label class="form-check-labe" for="password">Password</label>
+                  <input type="password" class="form-control" formControlName="password" />
+              </div>
+            </div>
+
+            <div *ngIf="this.statusCode != 200" ngClass="mt-0">
+              <p class="text-danger">{{this.errorMessage}}</p>
+            </div>
+
+            <div class="text-end">
+              <button class="btn btn-primary btn-block" type="submit" [disabled]="!form.valid">Accedi</button>
+            </div>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
