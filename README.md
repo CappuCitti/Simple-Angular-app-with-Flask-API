@@ -17,8 +17,8 @@ Per questo progetto è importanete installare [Bootstrap](https://getbootstrap.c
 
 ## Inizializzare il server Python
 Il server Python necessita dei seguenti moduli
-| Libreria | Installazione | Richiesta | Descrizione
-| --- | --- | :-: | --- |
-| [Flask](https://flask.palletsprojects.com/en/2.2.x/) | `pip install Flask` | ✔ | Libreria per avviare il server |
-| [CORS](https://flask-cors.readthedocs.io/en/latest/) | `pip install flask-cors` | ✔ | Cross-Origin Resource Sharing, che permette ad Angular d'interagire con il sevrer Flask |
-| [dotenv](https://pypi.org/project/python-dotenv/) | `pip install python-dotenv` | ❌ | Qualora si volessero nascondere le credenziali della connessione al Database si possono salvare in un fille `.env` |
+| Libreria | Installazione | Richiesta | Necessaria | Descrizione
+| --- | --- | :-: | :-: | --- |
+| [Flask](https://flask.palletsprojects.com/en/2.2.x/) | `pip install Flask` | ✔ | ✔ | Libreria per avviare il server |
+| [CORS](https://flask-cors.readthedocs.io/en/latest/) | `pip install flask-cors` | ✔ | ✔ | Cross-Origin Resource Sharing, che permette ad Angular d'interagire con il sevrer Flask |
+| [dotenv](https://pypi.org/project/python-dotenv/) | `pip install python-dotenv` | ✔ | ❌ |  Qualora si volessero nascondere le credenziali della connessione al Database si possono salvare in un fille `.env` |
